@@ -108,7 +108,7 @@ if page == "Forecast Dashboard":
     except Exception as e:
         st.warning(f"Could not generate LIME explanation: {e}")
 
-    st.caption("Developed with ❤️ by Syeda Faryal Fatima | 10Pearls | Hopsworks Integrated AQI Predictor")
+    st.caption("Developed with ❤️ by Izza Ali | 10Pearls | Hopsworks Integrated AQI Predictor")
 
 # -------------------------------------------------------------------
 # EDA DASHBOARD
