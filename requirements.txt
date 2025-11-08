@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+joblib
+requests
+streamlit
+hopsworks
+python-dotenv
+matplotlib
+shap
+lime
+joblib
