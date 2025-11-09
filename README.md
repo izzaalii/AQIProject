@@ -132,49 +132,49 @@ AQI_Project/
 ```
 ---
 
-# 🧰 Installation Guide
-## Step 1: Open PowerShell
+## 🧰 Installation Guide
+ **Step 1: Open PowerShell**
 
 Right-click inside the project folder and select “Open in PowerShell.”
 
-## Step 2: Create Virtual Environment
+ **Step 2: Create Virtual Environment**
 ```
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
 
-## Step 3: Install Dependencies
+ **Step 3: Install Dependencies**
 ```
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-## Step 4: Configure Environment Variables
+ **Step 4: Configure Environment Variables**
 ```
 copy .env.example .env
 ```
 
 Edit the .env file as needed to update configurations.
 
-# 🚀 Usage Instructions
-## Generate Features
+## 🚀 Usage Instructions
+ **Generate Features**
 ```
 python feature_pipeline\run_feature_pipeline.py
 ```
 
-## Train Models
+ **Train Models**
 ```
 python training_pipeline\train_models.py
 ```
 
-## Launch Streamlit Dashboard
+ **Launch Streamlit Dashboard**
 ```
 streamlit run web_app\streamlit_app.py
 ```
 
 Open the displayed URL (typically http://localhost:8501) in your browser to view the dashboard.
 
-# 🔁 Automation (Task Scheduler)
+## 🔁 Automation (Task Scheduler)
 
 To automate daily and hourly updates, two PowerShell scripts are provided in the scripts\ folder:
 ```
@@ -186,7 +186,7 @@ run_daily_training.ps1	Retrains models daily
 You can add these to Windows Task Scheduler to keep data and predictions automatically refreshed.
 Make sure the scripts call Python from your virtual environment path (e.g., .venv\Scripts\python.exe).
 
-# ☁️ Hopsworks Integration
+## ☁️ Hopsworks Integration
 
 If you prefer to push features or models to Hopsworks instead of keeping them local, edit your .env file and set:
 
@@ -196,7 +196,7 @@ HOPSWORKS_HOST=your_host_url
 HOPSWORKS_API_KEY=your_api_key
 ```
 
-# Results & Achievements
+## Results & Achievements
 
 Fully automated AQI prediction pipeline
 
@@ -210,7 +210,7 @@ Interactive dashboards with model explainability
 
 Professional-grade MLOps workflow
 
-# 📸 Visual Preview
+## 📸 Visual Preview
 
 <img width="1919" height="961" alt="image" src="https://github.com/user-attachments/assets/a9c41c31-6160-45ed-8fe2-87fcbbf7465f" />
 
